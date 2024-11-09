@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c533361b46.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Skills</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hello, I'm <span>Aryan</span><br> Kadam, an undergrad</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ------------about------------ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>I’m Aryan Ajay Kadam, pursuing my BE Degree at AISSMS IOIT with a passion for web development and technology. I specialize in HTML, CSS, JavaScript, ReactJS, and WordPress, and have hands-on experience from my internship at Noqs Digital, where I built responsive, secure websites. I’m also interested in blockchain technology and AI, currently working on my final-year project, an AI Software Project Planner. Always eager to learn and grow, I aim to create innovative solutions and contribute to the tech community.
+
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Java</span><br>Programming language</li>
+                            <li><span>UI/UX</span><br>Designing Web App Interfaces</li>
+                            <li><span>Web Development</span><br>Web application development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024(Jan) - 2024(Feb)</span><br>NoQs Digital</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021-Current</span><br>AISSMS IOIT</li>
+                            <li><span>2019-2021</span><br>Namo Rims Junior High School</li>
+                            <li><span>Till 2019</span><br>Hume McHenry Memorial High School</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------Services--------------------- -->
+     <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Database Integrated Web Applications</h2>
+                    <p>Database Integrated Web Application Services involve creating dynamic websites that connect to databases for storing and managing data.
+                    </p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-chalkboard-user"></i>
+                    <h2>Java Training and Mentorship</h2>
+                    <p>Java Training and Mentorship offers personalized learning to help individuals or teams master Java programming.
+                    </p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-circle-nodes"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>UI/UX Design focuses on creating user-friendly, visually appealing digital experiences.
+                    </p>
+                </div>
+            </div>
+        </div>
+     </div>
+     <!-- -----------portfolio--------------- -->
+      <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/project-1.png">
+                    <div class="layer">
+                        <h3>Portfolio Website</h3>
+                        <p>I developed my Portfolio Website to showcase my skills,projects and
+                            my related information.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/project-2.png">
+                    <div class="layer">
+                        <h3>Computer Departmental Website</h3>
+                        <p>Created this website to showcase the update of upcoming events,announcements and 
+                            other activites of the college.
+                        </p>
+                        <a href="https://ioitcesa.in/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/project-3.png">
+                    <div class="layer">
+                        <h3>Pest Control Website</h3>
+                        <p>I have created Pest Control Website as a Freelancer which is used
+                            for showcasing the information about different services the company provide and to
+                            store the data of the customers.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <!-- --------------------contact----------------------- -->
+       <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i>aryankadam9090@gmail.com</p>
+                        <p><i class="fa-solid fa-square-phone"></i>8600733935</p>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/aryan.kadam.31149/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://x.com/aryankadam9090" target="_blank"><i class="fa-brands fa-twitter-square"></i></a>
+                            <a href="https://www.instagram.com/rn_kadam_173/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/aryan-kadam-b883041ba/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <a href="https://drive.google.com/file/d/1tPDCHD5FoBiBX5RHTDG55MXRCUqL8Vch/view?usp=sharing" target="_blank"  download class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright @ Aryan Kadam.</p>
+            </div>
+       </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwgVQOpArAfdtpuYcUlIg4126W_X4Bn4QgLfm1KrlNJf66SUOJSrobi4ss8-Za8Bfd7Nw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
